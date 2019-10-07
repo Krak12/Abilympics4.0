@@ -46,14 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ChangePassCr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ChangePassCr.Designer.cs">
+      <DependentUpon>ChangePassCr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassSp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassSp.Designer.cs">
+      <DependentUpon>ChangePassSp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatorMenu.Designer.cs">
+      <DependentUpon>CreatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialistMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistMenu.Designer.cs">
+      <DependentUpon>SpecialistMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianMenu.Designer.cs">
+      <DependentUpon>TechnicianMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePassCr.resx">
+      <DependentUpon>ChangePassCr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassSp.resx">
+      <DependentUpon>ChangePassSp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatorMenu.resx">
+      <DependentUpon>CreatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +110,25 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SpecialistMenu.resx">
+      <DependentUpon>SpecialistMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianMenu.resx">
+      <DependentUpon>TechnicianMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbDataSet.xsc">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet.xss">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
